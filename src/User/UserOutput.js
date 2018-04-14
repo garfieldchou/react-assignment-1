@@ -2,7 +2,10 @@ import React from 'react';
 
 const userOutput = () => {
   return(
-    <h1>userOutput</h1>
+    <div>
+      <p>paragraph 1</p>
+      <p>paragraph 2</p>
+    </div>
   );
 };
 
