@@ -28,7 +28,7 @@ class App extends Component {
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
-        <UserInput />
+        <UserInput onchange={this.changeUsernameHandler.bind(this)}/>
         <UserOutput name={this.state.username}/>
       </div>
     );
