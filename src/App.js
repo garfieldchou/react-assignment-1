@@ -10,6 +10,14 @@ class App extends Component {
     username: 'shushu',
   }
 
+  changeUsernameHandler = (newName) => {
+    this.setState(
+      {
+        username: newName,
+      }
+    );
+  };
+
   render() {
     return (
       <div className="App">
