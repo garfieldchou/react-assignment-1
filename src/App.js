@@ -10,7 +10,7 @@ class App extends Component {
     username: 'shushu',
   }
 
-  changeUsernameHandler = (newName) => {
+  usernameChangedHandler = (newName) => {
     this.setState(
       {
         username: newName,
@@ -32,7 +32,7 @@ class App extends Component {
         <p className="App-intro" style={style}>
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
-        <UserInput onchange={this.changeUsernameHandler.bind(this)} username={this.state.username}/>
+        <UserInput changed={this.usernameChangedHandler.bind(this)} username={this.state.username}/>
         <UserOutput name={this.state.username}/>
       </div>
     );
